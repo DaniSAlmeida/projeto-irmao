@@ -1,14 +1,16 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root{
-    --cor0:#ebc5c5;
-    --cor1:#e18383;
-    --cor2:#dc3d3d;
-    --cor3:#a82f2f;
-    --cor4:#5c1a1a;
-    --cor5:#3d0606;
+    --cor0:#d7ebc5;
+    --cor1:#a9e183;
+    --cor2:#97dc3d;
+    --cor3:#4aa327;
+    --cor4:#295216;
+    --cor5:#0a2e05;
 
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;   
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Permanent Marker', cursive;  
 }
 
 /*Configuração Global*/
@@ -35,30 +37,31 @@ header{
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    padding-bottom: -10px;
 }
 
 
 header > h1{
     color: white;
-    font-family: var(--fonte-padrao);
-    margin-bottom: 20px;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 5px;
     font-size: 3em;
     font-weight: normal;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);   
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.575);   
             
 }
 
 
 header > p {
-    font-family: var(--fonte-padrao);
-    font-size: 1em;
+    font-family: var(--fonte-destaque);
+    font-size: 1.1em;
     color: white;
     max-width: 500px;
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.575);   
     text-align: center;
 }
 
@@ -98,28 +101,21 @@ main{
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #f8dddd;
+    background-color: #f8ddddb2;
     box-shadow: 0px 0px 10px black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     
 }
 
-
-main h1{
-    color: var(--cor5);
-    font-family: var(--font-android);
-    font-weight: normal;
-    font-size: 1.8;
-}
-
 main h2{
-    font-family: var(--font-android);
+    font-family: var(--fonte-destaque);
     color: var(--cor4);
     font-size: 1.8em;
     font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 10px;
+   
 }
 
 
@@ -217,8 +213,8 @@ footer{
 
 
 footer a{
-    color: white;
-    font-weight: bolder;
+    color: white;    
+    font-weight: bolder;    
     text-decoration: none;
 }
 
